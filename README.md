@@ -1,4 +1,5 @@
 ### Pyspark Repository 
+Building a remote repository for all my pyspark hobby project notebooks.
 
 - Spark version 3.5.0
 - jupyterlab - compatible for 3.5.0
