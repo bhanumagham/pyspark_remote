@@ -3,7 +3,8 @@
 - Spark version 3.5.0
 - jupyterlab - compatible for 3.5.0
 - Delta lake - 3.0.0 which is compatible with Spark version above
- Bhanu bhaiyya's tip : make sure you build the image with the compatible versions, else you will waste a lot of time debugging what went wrong.
+
+Bhanu bhaiyya's tip : make sure you build the image with the compatible versions, else you will waste a lot of time debugging what went wrong.
 
   ========================================
 #### Important Commands
