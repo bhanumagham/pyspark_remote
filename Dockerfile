@@ -1,23 +1,31 @@
-FROM jupyter/pyspark-notebook:latest
-
+FROM jupyter/base-notebook:python-3.10
 USER root
 
-# Install any additional Python packages here
-RUN pip install pandas matplotlib seaborn
 
 # Set permissions
 RUN chown -R jovyan:users /home/jovyan
 
+RUN apt-get update && \
+    apt-get install -y openjdk-17-jdk && \
+    rm -rf /var/lib/apt/lists/*
+
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-arm64
+ENV PATH=$JAVA_HOME/bin:$PATH
 
 # Install Delta Lake dependencies
-ENV DELTA_CORE_VERSION=3.0.0 \
-    SPARK_VERSION=3.5.1
 
-# Add Delta Lake JARs to Spark
-RUN wget https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.0.0/delta-spark_2.12-3.0.0.jar -P /usr/local/spark/jars/ \
- && wget https://repo1.maven.org/maven2/io/delta/delta-storage/3.0.0/delta-storage-3.0.0.jar -P /usr/local/spark/jars/
-#https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.0.0/delta-spark_2.12-3.0.0.jar
-# Optionally install Python delta library
-RUN pip install delta-spark==3.0.0
 
 USER jovyan
+# Install Python packages
+RUN pip install \
+    pyspark==3.5.1 \
+    delta-spark==3.0.0 \
+    pandas \
+    matplotlib \
+    seaborn
+
+#RUN pip install pyspark==3.5.1
+
+
+########
+

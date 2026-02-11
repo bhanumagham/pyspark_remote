@@ -1,0 +1,52 @@
+version: "3.8"
+
+services:
+
+  spark-master:
+    image: bitnami/spark:3.5
+    container_name: spark-master
+    volumes:
+      - ./conf/spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
+    environment:
+      - SPARK_MODE=master
+      - SPARK_MASTER_PORT=7077
+      - SPARK_MASTER_WEBUI_PORT=8080
+    ports:
+      - "8080:8080"    # Spark Master Web UI
+      - "7077:7077"    # Spark Master Port
+    networks:
+      - spark-net
+
+  spark-worker:
+    image: bitnami/spark:3.5 #docker pull bitnami/spark:3.5
+    container_name: spark-worker
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_MEMORY=2G
+      - SPARK_WORKER_CORES=2
+    depends_on:
+      - spark-master
+    networks:
+      - spark-net
+
+  jupyterlab:
+    build: .
+    container_name: jupyterlab
+    volumes:
+      - ./include:/home/jovyan/work
+      - ./data:/home/jovyan/data
+    ports:
+      - "8888:8888"    # JupyterLab
+    environment:
+      - PYSPARK_PYTHON=python3
+      - PYSPARK_DRIVER_PYTHON=jupyter
+      - PYSPARK_DRIVER_PYTHON_OPTS=lab --ip=0.0.0.0 --allow-root
+      - SPARK_MASTER=spark://spark-master:7077
+    depends_on:
+      - spark-master
+    networks:
+      - spark-net
+
+networks:
+  spark-net:
