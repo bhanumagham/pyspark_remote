@@ -6,7 +6,8 @@ services:
     image: apache/spark:3.5.1
     container_name: spark-master
     platform: linux/arm64
-
+    volumes:
+    - ./data:/home/jovyan/data
     hostname: spark-master
 
     command:
@@ -25,7 +26,8 @@ services:
     image: apache/spark:3.5.1
     container_name: spark-worker
     platform: linux/arm64
-
+    volumes:
+    - ./data:/home/jovyan/data
     hostname: spark-worker
 
     depends_on:
