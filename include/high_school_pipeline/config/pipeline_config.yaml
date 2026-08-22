@@ -14,3 +14,8 @@ paths:
   weights: "../../data/jchs_weightage.csv"
   marks: "../../data/jchs_marks_data.json"
   output: "../../data/outputs/"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  filepath: "../../data/logs/"
