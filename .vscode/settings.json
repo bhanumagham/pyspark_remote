@@ -1,5 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "./include/high_school_pipeline/src"
-    ]
-}
