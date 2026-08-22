@@ -1,0 +1,100 @@
+[
+  {
+    "order_id": "ORD001",
+    "customer": {"customer_id": "C001", "name": "Rahul Sharma", "city": "Bangalore"},
+    "order_date": "2026-08-20",
+    "items": [
+      {"product_id": "P101", "category": "Electronics", "price": 70000, "qty": 1},
+      {"product_id": "P102", "category": "Electronics", "price": 500, "qty": 2}
+    ],
+    "payment_status": "SUCCESS",
+    "delivery_status": "DELIVERED"
+  },
+  {
+    "order_id": "ORD002",
+    "customer": {"customer_id": "C002", "name": "Priya Verma", "city": "Hyderabad"},
+    "order_date": "2026-08-21",
+    "items": [
+      {"product_id": "P103", "category": "Fashion", "price": 3000, "qty": 1}
+    ],
+    "payment_status": "FAILED",
+    "delivery_status": "PENDING"
+  },
+  {
+    "order_id": "ORD003",
+    "customer": {"customer_id": "C003", "name": "Amit Singh", "city": "Delhi"},
+    "order_date": "2026-08-21",
+    "items": [
+      {"product_id": "P104", "category": "Grocery", "price": 200, "qty": 5}
+    ],
+    "payment_status": "SUCCESS",
+    "delivery_status": "SHIPPED"
+  },
+  {
+    "order_id": "ORD004",
+    "customer": {"customer_id": "C001", "name": "Rahul Sharma", "city": "Bangalore"},
+    "order_date": "2026-08-22",
+    "items": [
+      {"product_id": "P105", "category": "Electronics", "price": 15000, "qty": 1}
+    ],
+    "payment_status": "SUCCESS",
+    "delivery_status": "DELIVERED"
+  },
+  {
+    "order_id": "ORD005",
+    "customer": {"customer_id": "C004", "name": "Neha Gupta", "city": "Mumbai"},
+    "order_date": "2026-08-22",
+    "items": [
+      {"product_id": "P106", "category": "Fashion", "price": 2500, "qty": 2},
+      {"product_id": "P107", "category": "Fashion", "price": 1200, "qty": 1}
+    ],
+    "payment_status": "SUCCESS",
+    "delivery_status": "DELIVERED"
+  },
+  {
+    "order_id": "ORD006",
+    "customer": {"customer_id": "C005", "name": "Vikram Rao", "city": "Chennai"},
+    "order_date": "2026-08-23",
+    "items": [],
+    "payment_status": "SUCCESS",
+    "delivery_status": "CANCELLED"
+  },
+  {
+    "order_id": "ORD007",
+    "customer": {"customer_id": "C006", "name": "Sneha Iyer", "city": "Pune"},
+    "order_date": "2026-08-23",
+    "items": [
+      {"product_id": "P108", "category": "Books", "price": 600, "qty": 3}
+    ],
+    "payment_status": "SUCCESS",
+    "delivery_status": "DELIVERED"
+  },
+  {
+    "order_id": "ORD008",
+    "customer": {"customer_id": "C002", "name": "Priya Verma", "city": "Hyderabad"},
+    "order_date": "2026-08-24",
+    "items": [
+      {"product_id": "P109", "category": "Grocery", "price": 150, "qty": 10}
+    ],
+    "payment_status": "SUCCESS",
+    "delivery_status": "SHIPPED"
+  },
+  {
+    "order_id": "ORD009",
+    "customer": {"customer_id": "C007", "name": "Arjun Mehta", "city": "Delhi"},
+    "order_date": "2026-08-24",
+    "items": null,
+    "payment_status": "FAILED",
+    "delivery_status": "PENDING"
+  },
+  {
+    "order_id": "ORD010",
+    "customer": {"customer_id": "C008", "name": "Kavya Nair", "city": "Kochi"},
+    "order_date": "2026-08-25",
+    "items": [
+      {"product_id": "P110", "category": "Electronics", "price": 45000, "qty": 1}
+    ],
+    "payment_status": "SUCCESS",
+    "delivery_status": "DELIVERED"
+  }
+]

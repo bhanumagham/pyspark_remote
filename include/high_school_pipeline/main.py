@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 import yaml
-from include.high_school_pipeline.src.pipeline.job import run_job
+from src.pipeline.job import run_job
 from datetime import datetime
 
 

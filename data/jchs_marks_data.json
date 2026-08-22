@@ -1,0 +1,114 @@
+{
+  "school": "Justice Chowdary High School",
+  "academic_year": "2025-2026",
+  "students": [
+    {
+      "name": "Bhanu",
+      "marks": [
+        {"exam": "Unit Test 1","subjects": {"Telugu": 78,"Hindi": 72,"English": 85,"Maths": 88,"Science": 82,"Social": 80}},
+        {"exam": "Unit Test 2","subjects": {"Telugu": 81,"Hindi": 75,"English": 86,"Maths": 90,"Science": 84,"Social": 83}},
+        {"exam": "Unit Test 3","subjects": {"Telugu": 79,"Hindi": 74,"English": 87,"Maths": 91,"Science": 85,"Social": 82}},
+        {"exam": "Unit Test 4","subjects": {"Telugu": 82,"Hindi": 76,"English": 88,"Maths": 92,"Science": 86,"Social": 84}},
+        {"exam": "Quarterly","subjects": {"Telugu": 84,"Hindi": 78,"English": 89,"Maths": 93,"Science": 88,"Social": 86}},
+        {"exam": "Half Yearly","subjects": {"Telugu": 85,"Hindi": 80,"English": 90,"Maths": 94,"Science": 89,"Social": 87}},
+        {"exam": "Final","subjects": {"Telugu": 88,"Hindi": 82,"English": 92,"Maths": 96,"Science": 91,"Social": 89}}
+      ]
+    },
+    {
+      "name": "Bhargav",
+      "marks": [
+        {"exam": "Unit Test 1","subjects": {"Telugu": 70,"Hindi": 68,"English": 75,"Maths": 80,"Science": 78,"Social": 72}},
+        {"exam": "Unit Test 2","subjects": {"Telugu": 72,"Hindi": 70,"English": 77,"Maths": 82,"Science": 79,"Social": 74}},
+        {"exam": "Unit Test 3","subjects": {"Telugu": 73,"Hindi": 71,"English": 78,"Maths": 84,"Science": 80,"Social": 75}},
+        {"exam": "Unit Test 4","subjects": {"Telugu": 75,"Hindi": 72,"English": 79,"Maths": 85,"Science": 82,"Social": 77}},
+        {"exam": "Quarterly","subjects": {"Telugu": 76,"Hindi": 73,"English": 80,"Maths": 86,"Science": 83,"Social": 78}},
+        {"exam": "Half Yearly","subjects": {"Telugu": 77,"Hindi": 74,"English": 81,"Maths": 87,"Science": 84,"Social": 79}},
+        {"exam": "Final","subjects": {"Telugu": 78,"Hindi": 75,"English": 82,"Maths": 88,"Science": 85,"Social": 80}}
+      ]
+    },
+    {
+      "name": "Siva",
+      "marks": [
+        {"exam": "Unit Test 1","subjects": {"Telugu": 65,"Hindi": 60,"English": 70,"Maths": 72,"Science": 68,"Social": 66}},
+        {"exam": "Unit Test 2","subjects": {"Telugu": 67,"Hindi": 62,"English": 72,"Maths": 74,"Science": 70,"Social": 68}},
+        {"exam": "Unit Test 3","subjects": {"Telugu": 68,"Hindi": 63,"English": 73,"Maths": 75,"Science": 71,"Social": 69}},
+        {"exam": "Unit Test 4","subjects": {"Telugu": 69,"Hindi": 64,"English": 74,"Maths": 76,"Science": 72,"Social": 70}},
+        {"exam": "Quarterly","subjects": {"Telugu": 70,"Hindi": 65,"English": 75,"Maths": 77,"Science": 73,"Social": 71}},
+        {"exam": "Half Yearly","subjects": {"Telugu": 71,"Hindi": 66,"English": 76,"Maths": 78,"Science": 74,"Social": 72}},
+        {"exam": "Final","subjects": {"Telugu": 72,"Hindi": 68,"English": 78,"Maths": 80,"Science": 76,"Social": 74}}
+      ]
+    },
+    {
+      "name": "Teja",
+      "marks": [
+        {"exam": "Unit Test 1","subjects": {"Telugu": 85,"Hindi": 80,"English": 83,"Maths": 90,"Science": 88,"Social": 84}},
+        {"exam": "Unit Test 2","subjects": {"Telugu": 87,"Hindi": 82,"English": 85,"Maths": 92,"Science": 89,"Social": 86}},
+        {"exam": "Unit Test 3","subjects": {"Telugu": 88,"Hindi": 83,"English": 86,"Maths": 93,"Science": 90,"Social": 87}},
+        {"exam": "Unit Test 4","subjects": {"Telugu": 89,"Hindi": 84,"English": 87,"Maths": 94,"Science": 91,"Social": 88}},
+        {"exam": "Quarterly","subjects": {"Telugu": 90,"Hindi": 85,"English": 88,"Maths": 95,"Science": 92,"Social": 89}},
+        {"exam": "Half Yearly","subjects": {"Telugu": 91,"Hindi": 86,"English": 89,"Maths": 96,"Science": 93,"Social": 90}},
+        {"exam": "Final","subjects": {"Telugu": 92,"Hindi": 87,"English": 90,"Maths": 97,"Science": 94,"Social": 91}}
+      ]
+    },
+    {
+      "name": "Pradeep",
+      "marks": [
+        {"exam": "Unit Test 1","subjects": {"Telugu": 72,"Hindi": 68,"English": 70,"Maths": 78,"Science": 75,"Social": 73}},
+        {"exam": "Unit Test 2","subjects": {"Telugu": 73,"Hindi": 69,"English": 71,"Maths": 79,"Science": 76,"Social": 74}},
+        {"exam": "Unit Test 3","subjects": {"Telugu": 74,"Hindi": 70,"English": 72,"Maths": 80,"Science": 77,"Social": 75}},
+        {"exam": "Unit Test 4","subjects": {"Telugu": 75,"Hindi": 71,"English": 73,"Maths": 81,"Science": 78,"Social": 76}},
+        {"exam": "Quarterly","subjects": {"Telugu": 76,"Hindi": 72,"English": 74,"Maths": 82,"Science": 79,"Social": 77}},
+        {"exam": "Half Yearly","subjects": {"Telugu": 77,"Hindi": 73,"English": 75,"Maths": 83,"Science": 80,"Social": 78}},
+        {"exam": "Final","subjects": {"Telugu": 78,"Hindi": 74,"English": 76,"Maths": 84,"Science": 81,"Social": 79}}
+      ]
+    },
+    {
+      "name": "Sai",
+      "marks": [
+        {"exam": "Unit Test 1","subjects": {"Telugu": 82,"Hindi": 78,"English": 80,"Maths": 86,"Science": 84,"Social": 82}},
+        {"exam": "Unit Test 2","subjects": {"Telugu": 84,"Hindi": 80,"English": 82,"Maths": 88,"Science": 86,"Social": 84}},
+        {"exam": "Unit Test 3","subjects": {"Telugu": 85,"Hindi": 81,"English": 83,"Maths": 89,"Science": 87,"Social": 85}},
+        {"exam": "Unit Test 4","subjects": {"Telugu": 86,"Hindi": 82,"English": 84,"Maths": 90,"Science": 88,"Social": 86}},
+        {"exam": "Quarterly","subjects": {"Telugu": 87,"Hindi": 83,"English": 85,"Maths": 91,"Science": 89,"Social": 87}},
+        {"exam": "Half Yearly","subjects": {"Telugu": 88,"Hindi": 84,"English": 86,"Maths": 92,"Science": 90,"Social": 88}},
+        {"exam": "Final","subjects": {"Telugu": 89,"Hindi": 85,"English": 87,"Maths": 93,"Science": 91,"Social": 89}}
+      ]
+    },
+    {
+      "name": "Ganesh",
+      "marks": [
+        {"exam": "Unit Test 1","subjects": {"Telugu": 60,"Hindi": 58,"English": 65,"Maths": 70,"Science": 68,"Social": 64}},
+        {"exam": "Unit Test 2","subjects": {"Telugu": 62,"Hindi": 60,"English": 67,"Maths": 72,"Science": 70,"Social": 66}},
+        {"exam": "Unit Test 3","subjects": {"Telugu": 63,"Hindi": 61,"English": 68,"Maths": 73,"Science": 71,"Social": 67}},
+        {"exam": "Unit Test 4","subjects": {"Telugu": 64,"Hindi": 62,"English": 69,"Maths": 74,"Science": 72,"Social": 68}},
+        {"exam": "Quarterly","subjects": {"Telugu": 65,"Hindi": 63,"English": 70,"Maths": 75,"Science": 73,"Social": 69}},
+        {"exam": "Half Yearly","subjects": {"Telugu": 66,"Hindi": 64,"English": 71,"Maths": 76,"Science": 74,"Social": 70}},
+        {"exam": "Final","subjects": {"Telugu": 67,"Hindi": 65,"English": 72,"Maths": 77,"Science": 75,"Social": 71}}
+      ]
+    },
+    {
+      "name": "Ramesh",
+      "marks": [
+        {"exam": "Unit Test 1","subjects": {"Telugu": 75,"Hindi": 72,"English": 74,"Maths": 80,"Science": 78,"Social": 76}},
+        {"exam": "Unit Test 2","subjects": {"Telugu": 77,"Hindi": 74,"English": 76,"Maths": 82,"Science": 80,"Social": 78}},
+        {"exam": "Unit Test 3","subjects": {"Telugu": 78,"Hindi": 75,"English": 77,"Maths": 83,"Science": 81,"Social": 79}},
+        {"exam": "Unit Test 4","subjects": {"Telugu": 79,"Hindi": 76,"English": 78,"Maths": 84,"Science": 82,"Social": 80}},
+        {"exam": "Quarterly","subjects": {"Telugu": 80,"Hindi": 77,"English": 79,"Maths": 85,"Science": 83,"Social": 81}},
+        {"exam": "Half Yearly","subjects": {"Telugu": 81,"Hindi": 78,"English": 80,"Maths": 86,"Science": 84,"Social": 82}},
+        {"exam": "Final","subjects": {"Telugu": 82,"Hindi": 79,"English": 81,"Maths": 87,"Science": 85,"Social": 83}}
+      ]
+    },
+    {
+      "name": "Suresh",
+      "marks": [
+        {"exam": "Unit Test 1","subjects": {"Telugu": 68,"Hindi": 66,"English": 70,"Maths": 74,"Science": 72,"Social": 70}},
+        {"exam": "Unit Test 2","subjects": {"Telugu": 69,"Hindi": 67,"English": 71,"Maths": 75,"Science": 73,"Social": 71}},
+        {"exam": "Unit Test 3","subjects": {"Telugu": 70,"Hindi": 68,"English": 72,"Maths": 76,"Science": 74,"Social": 72}},
+        {"exam": "Unit Test 4","subjects": {"Telugu": 71,"Hindi": 69,"English": 73,"Maths": 77,"Science": 75,"Social": 73}},
+        {"exam": "Quarterly","subjects": {"Telugu": 72,"Hindi": 70,"English": 74,"Maths": 78,"Science": 76,"Social": 74}},
+        {"exam": "Half Yearly","subjects": {"Telugu": 73,"Hindi": 71,"English": 75,"Maths": 79,"Science": 77,"Social": 75}},
+        {"exam": "Final","subjects": {"Telugu": 74,"Hindi": 72,"English": 76,"Maths": 80,"Science": 78,"Social": 76}}
+      ]
+    }
+  ]
+}
