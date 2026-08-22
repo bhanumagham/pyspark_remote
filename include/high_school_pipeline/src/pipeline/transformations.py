@@ -126,8 +126,8 @@ def rank_calculation(df_joined: DataFrame) -> DataFrame:
         required, replace row_number() with dense_rank() or rank().
     """
     df_weighted = df_joined.withColumn("weighted_score" , F.col("sub_total") * F.col("weightage") / 100 )\
-                            .groupBy("student_name").agg(F.round(F.sum("weighted_score"),2).alias("final_score"))
+                            .groupBy("school","student_name").agg(F.round(F.sum("weighted_score"),2).alias("final_score"))
     
-    window1 = Window.orderBy(F.col("final_score").desc())
+    window1 = Window.partitionBy(F.col("school")).orderBy(F.col("final_score").desc())
     
-    return ( df_weighted.withColumn("rank",F.dense_rank().over(window1)) )
+    return ( df_weighted.withColumn("rank",F.dense_rank().over(window1)).drop("school") )
