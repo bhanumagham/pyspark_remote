@@ -5,6 +5,7 @@ from src.pipeline.transformations import (explode_students, explode_marks,
                              clean_marks, calculate_totals, 
                              join_marks_weights, rank_calculation)
 from src.pipeline.writer import write_output 
+from src.pipeline.dq.pipeline_quality import validate_dataframe
 
 def run_job(spark: SparkSession, weights_path: str, marks_path: str, output_path: str) -> None:
     # Load the data
@@ -22,6 +23,8 @@ def run_job(spark: SparkSession, weights_path: str, marks_path: str, output_path
                         .transform(explode_marks)\
                         .transform(clean_marks)\
                         .transform(calculate_totals)
+
+    validate_dataframe(df_totals)
     
     df_joined = join_marks_weights(df_totals, df_weights)
     
