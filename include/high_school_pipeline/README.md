@@ -2,7 +2,7 @@
 
 ## Overview
 
-The High School Pipeline is a data processing module within the pyspark_remote project. It provides ETL (Extract, Transform, Load) capabilities for handling and analyzing high school education data using Apache Spark.
+The High School Pipeline is a data processing module within the pyspark_remote project. It provides ETL (Extract, Transform, Load) capabilities for handling and analyzing high school education data.
 
 ## Purpose
 
@@ -18,10 +18,12 @@ This pipeline is designed to:
 include/high_school_pipeline/
 ├── README.md          # This file
 ├── config/            # Configuration files
-├── jobs/              # PySpark job definitions
-├── transformations/   # Data transformation logic
-└── utils/             # Utility functions and helpers
+├── main.py            # Entry point for running the pipeline
+├── src/               # Source modules (jobs, transformations, utils, etc.)
+└── tests/             # Unit and integration tests
 ```
+
+> Note: The repository layout places implementation files under `src/` rather than a top-level `jobs/` directory. If you prefer `jobs/`, we can move or add a directory and update imports accordingly.
 
 ## Getting Started
 
@@ -46,15 +48,15 @@ pip install -r requirements.txt
 
 ```bash
 # Execute the pipeline
-spark-submit include/high_school_pipeline/jobs/main.py
+spark-submit include/high_school_pipeline/main.py
 
 # Or with specific parameters
-spark-submit include/high_school_pipeline/jobs/main.py --config config/production.yaml
+spark-submit include/high_school_pipeline/main.py --config include/high_school_pipeline/config/production.yaml
 ```
 
 ## Configuration
 
-Configuration files are located in the `config/` directory. Modify these files to customize:
+Configuration files are located in the `include/high_school_pipeline/config/` directory. Modify these files to customize:
 - Data source connections
 - Output destinations
 - Processing parameters
