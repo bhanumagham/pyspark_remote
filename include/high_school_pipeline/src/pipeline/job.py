@@ -12,11 +12,19 @@ def run_job(spark: SparkSession, weights_path: str, marks_path: str, output_path
     df_weights = load_weights(spark, weights_path)
 
     # Transform the data
+    """
     df_exploded_students = explode_students(df_marks)
     df_exploded_marks = explode_marks(df_exploded_students)
     df_cleaned_marks = clean_marks(df_exploded_marks)
     df_totals = calculate_totals(df_cleaned_marks)
+    """
+    df_totals = df_marks.transform(explode_students)\
+                        .transform(explode_marks)\
+                        .transform(clean_marks)\
+                        .transform(calculate_totals)
+    
     df_joined = join_marks_weights(df_totals, df_weights)
+    
     df_ranked = rank_calculation(df_joined)
 
     # Write the output
