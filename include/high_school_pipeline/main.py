@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 import yaml
-from job import run_job
+from include.high_school_pipeline.src.pipeline.job import run_job
 from datetime import datetime
 
 
@@ -10,7 +10,7 @@ def load_config(path: str) -> dict:
         return yaml.safe_load(f)
 
 if __name__ == "__main__":
-    config = load_config("pipeline_config.yaml")
+    config = load_config("config/pipeline_config.yaml")
     weights_path = config["paths"]["weights"]
     marks_path = config["paths"]["marks"]
     output_path = config["paths"]["output"]
