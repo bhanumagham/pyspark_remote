@@ -22,7 +22,8 @@ RUN pip install \
     delta-spark==3.0.0 \
     pandas \
     matplotlib \
-    seaborn
+    seaborn \
+    pytest
 
 #RUN pip install pyspark==3.5.1
 
