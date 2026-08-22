@@ -1,0 +1,18 @@
+{
+  "school": "Justice Chowdary High School",
+  "academic_year": "2025-2026",
+  "students": [
+    {
+      "name": "Bhanu",
+      "marks": [
+        {"exam": "Unit Test 1","subjects": {"Telugu": 78,"Hindi": 72,"English": 85,"Maths": 88,"Science": 82,"Social": 80}},
+        {"exam": "Unit Test 2","subjects": {"Telugu": 81,"Hindi": 75,"English": 86,"Maths": 90,"Science": 84,"Social": 83}},
+        {"exam": "Unit Test 3","subjects": {"Telugu": 79,"Hindi": 74,"English": 87,"Maths": 91,"Science": 85,"Social": 82}},
+        {"exam": "Unit Test 4","subjects": {"Telugu": 82,"Hindi": 76,"English": 88,"Maths": 92,"Science": 86,"Social": 84}},
+        {"exam": "Quarterly","subjects": {"Telugu": 84,"Hindi": 78,"English": 89,"Maths": 93,"Science": 88,"Social": 86}},
+        {"exam": "Half Yearly","subjects": {"Telugu": 85,"Hindi": 80,"English": 90,"Maths": 94,"Science": 89,"Social": 87}},
+        {"exam": "Final","subjects": {"Telugu": 88,"Hindi": 82,"English": 92,"Maths": 96,"Science": 91,"Social": 89}}
+      ]
+    }
+]
+}

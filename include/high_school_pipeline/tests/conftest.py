@@ -1,7 +1,9 @@
 # tests/conftest.py
 import pytest
 from pyspark.sql import SparkSession
-
+import sys
+import os
+sys.path.append(os.path.abspath("src"))
 
 @pytest.fixture(scope="session")
 def spark():
