@@ -1,0 +1,16 @@
+# config.yaml
+
+spark:
+  app_name: "student-final-ranks-pipeline"
+
+  configs:
+    spark.master: "local[*]"
+    #spark.sql.shuffle.partitions: "8"
+    #spark.executor.memory: "2g"
+    spark.driver.memory: "2g"
+    spark.sql.adaptive.enabled: "true"
+
+paths:
+  weights: "../../data/jchs_weightage.csv"
+  marks: "../../data/jchs_marks_data.json"
+  output: "../../data/outputs/"
